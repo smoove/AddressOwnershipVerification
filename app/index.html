@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ethereum address ownership verification demo</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Ethereum address ownership verification</h1><br />
+  Transactor address:<br />
+  <input type="text" id="address_transactor" placeholder="0x123..." oninput="App.updateStatus()"><br />
+  <br />
+  Transactee address:<br />
+  <input type="text" id="address_transactee" placeholder="0x123..." oninput="App.updateStatus()" /><br />
+  <br />
+  Deposit:<br />
+  <input type="text" id="deposit" placeholder="1234" /><br />
+  <br />
+  <button onclick="App.request()">Create request as transactor</button>
+  <button onclick="App.sendDeposit()">Send deposit as transactee</button>
+  <br />
+  <br />
+  <h3>Status</h3>
+  <span id="request">loading...</span>
+  <br />
+  <br />
+  <h3>Verified</h3>
+  <span id="verified">loading...</span>
+  <br />
+  <br />
+  <button onclick="App.clearLog()">clear log</button>
+  <br />
+  <h3>Log</h3>
+  <div id="log"></div>
+</body>
+</html>
