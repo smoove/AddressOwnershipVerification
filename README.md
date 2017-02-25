@@ -2,6 +2,7 @@
 Think SMS cell phone number verification for ethereum addresses.
 
 **Possible use cases**:
+
 Exchanges could use this contract to verify their user's withdrawal addresses before sending them crypto currencies.
 
 This could remove a possible user error from the withdrawal processes.
@@ -19,7 +20,7 @@ git clone https://github.com/smoove/AddressOwnershipVerification.git
 cd AddressOwnershipVerification
 npm install
 truffle compile
-truffle migrate # make sure testrpc/geth/paritry is running
+truffle migrate # make sure testrpc/geth/parity is running
 npm run build
 truffle serve
 ```
@@ -54,7 +55,7 @@ optional:
 ```
 event RequestEvent(address indexed transactor, address indexed transactee, uint32 indexed deposit);
 ```
-Triggered when a new request is created
+Triggered when a new request is created.
 
 ## RemoveRequestEvent
 ```
@@ -66,13 +67,13 @@ Triggered when a pending request is removed by either party before it was verifi
 ```
 event VerificationEvent(address indexed transactor, address indexed transactee, uint32 indexed deposit); 
 ```
-Triggered when a pending request is successfully verified
+Triggered when a pending request is successfully verified.
 
 ## RevokeEvent
 ```
 event RevokeEvent(address indexed transactor, address indexed transactee, uint32 indexed deposit);  
 ```
-Triggered when either party revokes an existing verification
+Triggered when either party revokes an existing verification.
 
 # Running tests
 ```bash
