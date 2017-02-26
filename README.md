@@ -43,7 +43,7 @@ Then navigate to [http://localhost:8080/](http://localhost:8080/) in your browse
 3. Transactor calls `request(address, deposit)`
 4. Transactor tells transactee to send `deposit` amount of wei to this contract - Transactee could also listen for the `RequestEvent` event to get notified.
 5. Transactee sends `deposit` amount of wei to this contract from `address`
-6. Transactee listens for the `TrustEvent` event or gets informed by transactee that the deposit has been sent
+6. Transactor listens for the `TrustEvent` event or gets informed by transactee that the deposit has been sent
 7. Transactor can now call `verify(transactor, address)` to know wether or not transactee has fullfilled the request
 
 optional:
