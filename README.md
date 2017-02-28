@@ -59,19 +59,19 @@ Triggered when a new request is created.
 
 ## RemoveRequestEvent
 ```
-event RemoveRequestEvent(address indexed transactor, address indexed transacteedeposit); 
+event RemoveRequestEvent(address indexed transactor, address indexed transactee);
 ```
 Triggered when a pending request is removed by either party before it was verified.
 
 ## VerificationEvent
 ```
-event VerificationEvent(address indexed transactor, address indexed transactee, uint32 indexed deposit); 
+event VerificationEvent(address indexed transactor, address indexed transactee, uint32 indexed deposit);
 ```
 Triggered when a pending request is successfully verified.
 
 ## RevokeEvent
 ```
-event RevokeEvent(address indexed transactor, address indexed transactee, uint32 indexed deposit);  
+event RevokeEvent(address indexed transactor, address indexed transactee, uint32 indexed deposit);
 ```
 Triggered when either party revokes an existing verification.
 
