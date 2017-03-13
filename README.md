@@ -11,8 +11,8 @@ This could remove a possible user error from the withdrawal processes.
 * [truffle](http://truffleframework.com) v3.0.2 or higher
 * [testrpc](https://github.com/ethereumjs/testrpc) must be running for local testing
 
-# Online demo
-:TODO:
+# Live Version
+The contract is deployed at address [0x6d2f190e6fd3bece517cb817254e8411249656a6](https://etherscan.io/address/0x6d2f190e6fd3bece517cb817254e8411249656a6#code) on the Ethereum **live** blockchain.
 
 # Local installation
 ```bash
